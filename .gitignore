@@ -1,0 +1,60 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+Pipfile.lock
+
+# Virtualenv
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+
+# Ignore coverage results
+coverage/
+coverage.xml
+*.cover
+
+# Ignore build output
+build/
+dist/
+*.egg-info/
+.eggs/
+.mypy_cache/
+
+# Ignore database
+db.sqlite3
+
+# Ignore Docker-related files
+docker-compose.override.yml
+
+# Ignore compiled code
+*.class
+*.dll
+*.exe
+*.o
+*.so
