@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "8000:8000"
+    networks:
+      - kfzmsg-net
+
+  # user-service:
+  #   build: ./user-service
+  #   ports:
+  #     - "5002:5000"
+  #   networks:
+  #     - kfzmsg-net
+
+  # post-service:
+  #   build: ./post-service
+  #   ports:
+  #     - "5003:5000"
+  #   networks:
+  #     - kfzmsg-net
+
+  # notification-service:
+  #   build: ./notification-service
+  #   ports:
+  #     - "5004:5000"
+  #   networks:
+  #     - kfzmsg-net
+
+  # gateway-service:
+  #   build: ./gateway-service
+  #   ports:
+  #     - "80:80"
+  #   networks:
+  #     - kfzmsg-net
+
+networks:
+  kfzmsg-net:
+    driver: bridge
